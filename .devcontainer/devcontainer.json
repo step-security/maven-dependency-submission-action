@@ -1,0 +1,15 @@
+{
+  "image": "ghcr.io/octodemo/development-containers/javascript:base-202401-r1",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "kingwl.vscode-vitest-runner",
+        "GitHub.copilot"
+      ]
+    }
+  },
+
+  // Install JDK and Maven for testing purposes
+  "postCreateCommand": "sudo .devcontainer/install_maven.sh",
+  "postStartCommand": "npm install"
+}
