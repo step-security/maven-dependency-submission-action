@@ -6,49 +6,33 @@
   "scripts": {
     "base-build": "npm ci && tsc",
     "build": "npm run base-build && npm exec -- @vercel/ncc build --source-map lib/src/index.js",
-    "build-exe": "npm run build && pkg package.json --compress Gzip",
     "test": "vitest --run"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/advanced-security/maven-dependency-submission-action.git"
+    "url": "git+https://github.com/step-security/maven-dependency-submission-action.git"
   },
   "keywords": [],
-  "author": "GitHub, Inc",
+  "author": "step-security",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/advanced-security/maven-dependency-submission-action/issues"
+    "url": "https://github.com/step-security/maven-dependency-submission-action/issues"
   },
-  "homepage": "https://github.com/advanced-security/maven-dependency-submission-action",
+  "homepage": "https://github.com/step-security/maven-dependency-submission-action#readme",
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/exec": "^1.1.1",
+    "axios": "^1.18.0",
     "@github/dependency-submission-toolkit": "^2.0.0",
     "commander": "^12.0.0",
     "packageurl-js": "^1.2.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.1",
-    "@vercel/ncc": "^0.38.1",
+    "@types/node": "^24.0.0",
+    "@vercel/ncc": "^0.44.0",
     "chai": "^4.3.6",
-    "@yao-pkg/pkg": "^5.16.1",
-    "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "vitest": "^4.1.8"
-  },
-  "bin": {
-    "cli": "lib/src/executable/cli.js"
-  },
-  "pkg": {
-    "targets": [
-      "node20-linux-x64",
-      "node20-win-x64",
-      "node20-macos-x64"
-    ],
-    "assets": [
-      "package.json"
-    ],
-    "publicPackages": "*",
-    "outputPath": "cli"
   }
 }

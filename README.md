@@ -9,7 +9,7 @@ The action will invoke maven using the `com.github.ferstl:depgraph-maven-plugin:
 
 ## Usage
 
-As of version `3.0.0` this action now supports Maven multi-module projects as well as additional Maven configuration parameters. As of version `5.0.0`, multi-module projects report dependencies as coming from their respective `pom.xml` files.
+This action supports multi-module projects report dependencies as coming from their respective `pom.xml` files.
 
 
 ### Pre-requisites
@@ -63,53 +63,16 @@ jobs:
           - java-version: 11
             directory: project2
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v7
     - name: Set up JDK ${{ matrix.java-version }}
-      uses: actions/setup-java@v2
+      uses: actions/setup-java@v5
       with:
         java-version: ${{ matrix.java-version }}
     - name: Submit Dependency Snapshot
-      uses: step-security/maven-dependency-submission-action@v3
+      uses: step-security/maven-dependency-submission-action@v5
        with:
         directory: ${{ matrix.directory }}
         correlator: ${{ github.job }}-${{ matrix.directory }}
 ```
 
 In this example, the action is configured to use different working directories based on the Java version specified in the matrix. This ensures that the dependency snapshot is accurate for each Java version being tested.
-
-## Command Line Usage
-
-There are experimental command line clients, Linux only for now that will provide the same functionality as the GitHub Action but can be embedded into your existing CI tooling and invoked from the commandline to upload a dependency snapshot.
-
-You can obtain the executables from the latest actions workflow run https://github.com/step-security/maven-dependency-submission-action/actions/workflows/publish_executables.yml.
-
-### Parameters
-
-Run the command line tool with the `--help` option to display all the possible configuration options;
-
-```
-Usage: maven-dependency-submission [options]
-
-Options:
-  -V, --version                             output the version number
-  -t, --token <token>                       GitHub access token
-  -r --repository <repository>              GitHub repository, owner/repo_name format
-  -b --branch-ref <ref>                     GitHub repository branch reference
-  -s --sha <commitSha>                      GitHub repository commit SHA
-  -d --directory <maven-project-directory>  the directory containing the Maven POM file (default: ".")
-  --github-api-url <url>                    GitHub API URL (default: "https://api.github.com")
-  -j --job-name <jobName>                   Optional name for the activity creating and submitting the graph (default: "maven-dependency-submission-cli")
-  -i --run-id <jobName>                     Optional Run ID number for the activity that is providing the graph
-  -h, --help                                display help for command
-```
-
-
-## Development
-
-To develop on this project, a Codespace has been provided that will provide all the necessary tools and installation of a JDK and Maven for the test suite to pass. Just open a Codespace and you can start to develop in the quickest possible timeframe.
-
-The codebase is in TypeScript to make it easier for maintenance.
-
-The source code lives under `src` and the Action is provided in the `src/index.ts` file.
-
-To build the software `npm` has been configured with scripts for `test` and `build` script to validate any work before publishing the action code.
