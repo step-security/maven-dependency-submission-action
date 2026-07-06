@@ -1,0 +1,38 @@
+{
+  "name": "maven-dependency-submission-action",
+  "version": "5.0.0",
+  "description": "Submit Maven dependencies to GitHub dependency submission API",
+  "main": "index.js",
+  "scripts": {
+    "base-build": "npm ci && tsc",
+    "build": "npm run base-build && npm exec -- @vercel/ncc build --source-map lib/src/index.js",
+    "test": "vitest --run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/step-security/maven-dependency-submission-action.git"
+  },
+  "keywords": [],
+  "author": "step-security",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/step-security/maven-dependency-submission-action/issues"
+  },
+  "homepage": "https://github.com/step-security/maven-dependency-submission-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/exec": "^1.1.1",
+    "axios": "^1.18.0",
+    "@github/dependency-submission-toolkit": "^2.0.0",
+    "commander": "^12.0.0",
+    "packageurl-js": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/node": "^24.0.0",
+    "@vercel/ncc": "^0.44.0",
+    "chai": "^4.3.6",
+    "typescript": "^5.3.3",
+    "vitest": "^4.1.8"
+  }
+}
