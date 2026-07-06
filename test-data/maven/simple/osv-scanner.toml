@@ -1,0 +1,89 @@
+# Test vulnerability - does not affect prod code
+
+[[IgnoredVulns]]
+id = "GHSA-269g-pwp5-87pp"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-3vqj-43w4-2q58"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-4jq9-2xhw-jpx7"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-6phf-6h5g-97j2"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-c9ph-gxww-7744"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-r4v4-5mwr-2fwr"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-xjw8-8c5c-9r79"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-26vr-8j45-3r4w"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-355h-qmc2-wpwf"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-3pxv-7cmr-fjr4"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-6hg6-v5c8-fphq"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-8mpp-f3f7-xc28"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-cj7v-27pg-wf7q"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-g8m5-722r-8whq"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-hmr7-m48g-48f6"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-m394-8rww-3jr7"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-m6cp-vxjx-65j6"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-p26g-97m4-6q7c"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-qh8g-58pp-2wxh"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-qw69-rqj8-6qw8"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-vc5p-v9hr-52mj"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-wjpw-4j6x-6rwh"
+reason = "Test vulnerability - does not affect prod code"

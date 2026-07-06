@@ -1,0 +1,37 @@
+# Test vulnerability - does not affect prod code
+
+[[IgnoredVulns]]
+id = "GHSA-269g-pwp5-87pp"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-355h-qmc2-wpwf"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-hmr7-m48g-48f6"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-mmxm-8w33-wc4h"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-qh8g-58pp-2wxh"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-qppj-fm5r-hxr3"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-rggv-cv7r-mw98"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-wgh7-54f2-x98r"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-wjpw-4j6x-6rwh"
+reason = "Test vulnerability - does not affect prod code"
