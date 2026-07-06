@@ -1,0 +1,41 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /test-data/maven/artifact-with-classifiers
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /test-data/maven/dependency-graph-2602
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /test-data/maven/maven-wrapper
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /test-data/maven/multi-module-multi-branch
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /test-data/maven/multi-module
+    schedule:
+      interval: daily
+
+  - package-ecosystem: maven
+    directory: /test-data/maven/simple
+    schedule:
+      interval: daily
