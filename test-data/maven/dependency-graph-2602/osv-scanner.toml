@@ -1,0 +1,17 @@
+# Test vulnerability - does not affect prod code
+
+[[IgnoredVulns]]
+id = "GHSA-24rp-q3w6-vc56"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-98qh-xjc8-98pq"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-vmq6-5m68-f53m"
+reason = "Test vulnerability - does not affect prod code"
+
+[[IgnoredVulns]]
+id = "GHSA-vr64-r9qj-h27f"
+reason = "Test vulnerability - does not affect prod code"

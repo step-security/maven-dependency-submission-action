@@ -1,0 +1,5 @@
+# Test vulnerability - does not affect prod code
+
+[[IgnoredVulns]]
+id = "GHSA-269g-pwp5-87pp"
+reason = "Test vulnerability - does not affect prod code"

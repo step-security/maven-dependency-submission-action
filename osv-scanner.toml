@@ -1,0 +1,35 @@
+[[IgnoredVulns]]
+id = "GHSA-2mjp-6q6p-2qxm"
+reason = "Does not affect: submitSnapshot() makes standard HTTPS requests to GitHub API; vulnerable HTTP client code paths not triggered"
+
+[[IgnoredVulns]]
+id = "GHSA-35p6-xmwp-9g52"
+reason = "Does not affect: no proxy protocol configuration used in submitSnapshot() requests to GitHub"
+
+[[IgnoredVulns]]
+id = "GHSA-4992-7rv2-5pvq"
+reason = "Does not affect: standard HTTPS requests don't trigger request handling vulnerability in undici"
+
+[[IgnoredVulns]]
+id = "GHSA-g8m3-5g58-fq7m"
+reason = "Does not affect: standard trusted HTTPS communication with GitHub API doesn't trigger this vulnerability"
+
+[[IgnoredVulns]]
+id = "GHSA-g9mf-h72j-4rw9"
+reason = "Does not affect: standard socket handling in HTTPS communication to GitHub doesn't trigger this vulnerability"
+
+[[IgnoredVulns]]
+id = "GHSA-p88m-4jfj-68fv"
+reason = "Does not affect: no proxy configuration in submitSnapshot() requests to GitHub API"
+
+[[IgnoredVulns]]
+id = "GHSA-v9p9-hfj2-hcw8"
+reason = "Does not affect: HTTP/2 edge cases not triggered by standard GitHub API communication"
+
+[[IgnoredVulns]]
+id = "GHSA-vrm6-8vpv-qv8q"
+reason = "Does not affect: HTTP/2 edge cases not triggered by standard GitHub API communication"
+
+[[IgnoredVulns]]
+id = "GHSA-vxpw-j846-p89q"
+reason = "Does not affect: proxy protocol handling not used in submitSnapshot() requests to trusted GitHub API"
